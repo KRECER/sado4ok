@@ -1,0 +1,17 @@
+// В этом файле должны быть стили для БЭМ-блока steps, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.steps {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 166px;
+
+  background-image: url('../img/bg-steps.png');
+  background-repeat: no-repeat;
+  background-size: 105% auto;
+  background-position: -40px 0;
+}

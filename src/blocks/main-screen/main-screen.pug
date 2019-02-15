@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (main-screen)
+
+mixin main-screen(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +main-screen('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' main-screen--' + modsList[i].trim();
+      }
+    }
+
+  .main-screen(class=allMods)&attributes(attributes)
+    block

@@ -1,0 +1,23 @@
+//- Все примеси в этом файле должны начинаться c имени блока (prizes)
+
+mixin prizes(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +prizes('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' prizes--' + modsList[i].trim();
+      }
+    }
+
+  .prizes(class=allMods)&attributes(attributes)
+    .prizes__inner
+      block
