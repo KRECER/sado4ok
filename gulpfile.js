@@ -343,7 +343,7 @@ function reload(done) {
 }
 
 function deploy(cb) {
-  ghpages.publish(path.join(process.cwd(), dir.build), cb);
+  ghpages.publish(path.join(process.cwd(), dir.build), {branch: 'build'}, cb);
 }
 exports.deploy = deploy;
 
