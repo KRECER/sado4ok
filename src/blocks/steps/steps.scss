@@ -13,4 +13,33 @@
   background-image: url('../img/bg-steps.png');
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 60px 300px;
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    width: 300px;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon img {
+    width: 252px;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

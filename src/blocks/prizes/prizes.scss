@@ -3,6 +3,9 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .prizes {
+  position: relative;
 
-  $block-name:                &; // #{$block-name}__element
+  background-image: url('../img/bg-main-screen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

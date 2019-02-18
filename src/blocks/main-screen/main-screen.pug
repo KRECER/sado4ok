@@ -19,4 +19,17 @@ mixin main-screen(text, mods)
     }
 
   .main-screen(class=allMods)&attributes(attributes)
+    img.main-screen__leave-1(src='../img/leave-1.png', alt='leave-1')
+    img.main-screen__leave-2(src='../img/leave-2.png', alt='leave-2')
+    img.main-screen__leave-3(src='../img/leave-3.png', alt='leave-3')
+    img.main-screen__leave-4(src='../img/leave-4.png', alt='leave-4')
+    img.main-screen__leave-5(src='../img/leave-5.png', alt='leave-5')
+    img.main-screen__leave-6(src='../img/leave-6.png', alt='leave-6')
+    img.main-screen__juice(src='../img/juice.png', alt='juice')
+    img.main-screen__hedgehog(src='../img/hedgehog.png', alt='hedgehog')
+    .main-screen__inner
+      img.main-screen__logo(src='../img/logo.svg', alt='logo')
+      img.main-screen__action(src='../img/action.svg', alt='action')
+      img.main-screen__title(src='../img/main-screen__title.png', alt='title')
+      +btn('Реєструй код').main-screen__btn
     block

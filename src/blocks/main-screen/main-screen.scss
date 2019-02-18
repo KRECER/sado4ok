@@ -8,4 +8,103 @@
   background-image: url('../img/bg-main-screen.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__inner {
+    position: relative;
+
+    width: 774px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 75px;
+  }
+
+  &__logo {
+    display: block;
+    width: 87%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  &__action {
+    position: absolute;
+    top: 26%;
+    left: 72%;
+
+    width: 15%;
+    transform: rotate(5deg);
+  }
+
+  &__title {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    display: table;
+    margin: 0 auto;
+    padding-right: 100px;
+  }
+
+  &__leave-1 {
+    position: absolute;
+    top: -1%;
+    left: -2%;
+
+    width: 12%;
+  }
+
+  &__leave-2 {
+    position: absolute;
+    top: 0;
+    left: 17%;
+
+    width: 29%;
+  }
+
+  &__leave-3 {
+    position: absolute;
+    top: 0;
+    left: 47%;
+
+    width: 15%;
+  }
+
+  &__leave-4 {
+    position: absolute;
+    top: 0;
+    left: 55%;
+
+    width: 27%;
+  }
+
+  &__leave-5 {
+    position: absolute;
+    top: 0;
+    left: 82%;
+
+    width: 25%;
+  }
+
+  &__leave-6 {
+    position: absolute;
+    top: 0;
+    right: -18%;
+
+    width: 35%;
+  }
+
+  &__juice {
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+
+    width: 600px;
+  }
+
+  &__hedgehog {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    bottom: 13%;
+  }
 }

@@ -1,0 +1,5 @@
+<svg class="js-menu-burger" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15">
+    <rect class="burger__line js-menu-burger-line-1" width="24" height="2" rx="1" y="0" data-svg-origin="12 1" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px;"></rect>
+    <rect class="burger__line js-menu-burger-line-2" y="6" width="24" height="2" rx="1" data-svg-origin="0 6" transform="matrix(1,0,0,1,0,0)"></rect>
+    <rect class="burger__line js-menu-burger-line-3" y="12" width="24" height="2" rx="1" data-svg-origin="12 13" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px;"></rect>
+</svg>

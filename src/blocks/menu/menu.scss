@@ -3,6 +3,48 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .menu {
+  position: fixed;
+  z-index: 102;
+  top: 35px;
+  right: 80px;
 
-  $block-name:                &; // #{$block-name}__element
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    height: 100%;
+    padding: 6px 25px;
+    margin-right: 30px;
+
+    color: #548134;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__icon-burger {
+    width: 22px;
+
+    fill: #548134;
+  }
 }

@@ -19,5 +19,8 @@ mixin menu(text, mods)
     }
 
   .menu(class=allMods)&attributes(attributes)
-    .menu__inner
-      block
+    .menu__list
+      a.menu__item(href='#') Вхід
+      a.menu__item(href='#') Реєстрація
+      button.menu__btn
+        svg.menu__icon-burger(width='24', height='24'): use(xlink:href='img/sprite.svg#icon-burger')

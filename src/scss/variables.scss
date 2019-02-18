@@ -1,5 +1,6 @@
 // Базовые цвета https://colorscheme.ru/color-converter.html
 
+$green:                       #548134;
 $black:                       hsl(0, 0%, 0%);
 $gray-darkest:                hsl(0, 0%, 10%);
 $gray-darker:                 hsl(0, 0%, 20%);
@@ -19,14 +20,14 @@ $color-warning:               hsl(35, 84%, 62%);
 
 $color-vk:                    #4a76a8;
 $color-fb:                    #4267b2;
-$color-tw:                    #40A2F5;
+$color-tw:                    #40a2f5;
 $color-gh:                    #24292e;
 
 
 
 // Семантические цвета
 
-$text-color:                  $gray-darkest;
+$text-color:                  $white;
 $text-color-muted:            $gray;
 $body-bg:                     $white;
 
@@ -87,9 +88,9 @@ $grid-gutter-width:           30px;
 // Разное
 
 $field-padding-vertical:      5px;
-$field-padding-horizontal:    12px;
+$field-padding-horizontal:    60px;
 
-$border-radius:               3px;
+$border-radius:               50px;
 $opacity:                     0.7;
 $transition-time:             0.3s;
 $shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);
