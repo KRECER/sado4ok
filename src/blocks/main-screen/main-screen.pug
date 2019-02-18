@@ -25,11 +25,12 @@ mixin main-screen(text, mods)
     img.main-screen__leave-4(src='../img/leave-4.png', alt='leave-4')
     img.main-screen__leave-5(src='../img/leave-5.png', alt='leave-5')
     img.main-screen__leave-6(src='../img/leave-6.png', alt='leave-6')
-    img.main-screen__juice(src='../img/juice.png', alt='juice')
-    img.main-screen__hedgehog(src='../img/hedgehog.png', alt='hedgehog')
     .main-screen__inner
-      img.main-screen__logo(src='../img/logo.svg', alt='logo')
-      img.main-screen__action(src='../img/action.svg', alt='action')
+      img.main-screen__logo(src='../img/logo--action.png', alt='logo')
       img.main-screen__title(src='../img/main-screen__title.png', alt='title')
       +btn('Реєструй код').main-screen__btn
-    block
+    footer.main-screen__footer
+      img.main-screen__juice(src='../img/juice.png', alt='juice')
+      .main-screen__sticker: img(src='../img/sticker.svg', alt='sticker', width='377', height='329')
+      img.main-screen__hedgehog(src='../img/hedgehog.png', alt='hedgehog')
+      block steps

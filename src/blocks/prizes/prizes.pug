@@ -19,5 +19,24 @@ mixin prizes(text, mods)
     }
 
   .prizes(class=allMods)&attributes(attributes)
-    .prizes__inner
-      block
+    .prizes__logo: img(src='../img/logo--leaves.png', alt='logo')
+    ul.prizes__list
+      li.prizes__item.prizes__item--divantv
+        img.prizes__description(src='../img/divantv-desc.png', alt='divantv description')
+        .prizes__icon: img(src='../img/icon-divantv.png', alt='prize-divantv')
+      li.prizes__item.prizes__item--phone
+        img.prizes__description(src='../img/phone-desc.png', alt='phone description')
+        .prizes__quantity 23 000
+        .prizes__icon: img(src='../img/icon-phone.png', alt='prize-phone')
+      li.prizes__item.prizes__item--rozetka
+        img.prizes__description(src='../img/rozetka-desc.png', alt='rozetka description')
+        .prizes__quantity 1000
+        .prizes__icon: img(src='../img/icon-apple.png', alt='prize-rozetka')
+      li.prizes__item.prizes__item--100000
+        img.prizes__description(src='../img/100000-desc.png', alt='100000 description')
+        .prizes__quantity 1
+        .prizes__icon: img(src='../img/icon-100000.png', alt='prize-100000')
+    footer.prizes__footer
+      .prizes__sticker: img(src='../img/sticker.svg', alt='sticker', width='377', height='329')
+      .prizes__text: img(src='../img/prizes__text.png', alt='prizes text')
+      +btn('переможці').prizes__btn

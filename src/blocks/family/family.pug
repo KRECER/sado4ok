@@ -19,5 +19,14 @@ mixin family(text, mods)
     }
 
   .family(class=allMods)&attributes(attributes)
+    .family__logo: img(src='../img/logo--leaves.png', alt='logo')
     .family__inner
-      block
+      p.family__text ЗДІЙСНЮЙ <br> МАЛЕНЬКІ БАЖАННЯ <br> І ЗАПОВІТНІ МРІЇ <br> СВОЇХ РІДНИХ!
+      ul.family__list
+        li.family__item Турбуючись про всіх своїх друзів, <br> «Садочок» пропонує в простий <br> спосіб  виказати любов до рідних.
+        li.family__item Милим проявом уваги можуть стати <br> розмаїті подарунки в акції «З <br> любов'ю  до рідних», якими можна <br> порадувати  будь-кого від свого <br> імені.
+        li.family__item Даруй іншим чи лишай собі – <br> виграшні  коди під кожною <br> кришечкою акційного «Садочка»!
+        li.family__item Деталі в офіційних правилах та в <br> особистому кабінеті
+    footer.family__footer
+      img.family__juices(src='../img/juices.png', alt='')
+      .family__sticker: img(src='../img/sticker.svg', alt='sticker', width='377', height='329')
