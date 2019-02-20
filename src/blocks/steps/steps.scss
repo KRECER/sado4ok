@@ -3,12 +3,17 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
 
   height: 166px;
+  padding-top: 40px;
 
   background-image: url('../img/bg-steps.png');
   background-repeat: no-repeat;
@@ -16,30 +21,46 @@
 
   &__list {
     display: flex;
-    margin: 0;
-    padding: 60px 300px;
+    justify-content: space-between;
+    width: 66%;
+    margin: 0 auto;
+    padding: 0;
 
     list-style: none;
   }
 
   &__item {
     display: flex;
-    width: 300px;
-  }
-
-  &__icon {
-    display: flex;
-    flex-direction: column;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
+
+    margin-right: 35px;
   }
 
-  &__icon img {
-    width: 252px;
+  &__number {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+    border: 10px solid #fbda00;
+
+    color: #93ce20;
+    font-size: 43px;
+    font-weight: 900;
+
+    background-color: $white;
+    border-radius: 50%;
   }
 
   &__description {
-    font-size: 20px;
+    margin: 0;
+
+    font-size: 22px;
     line-height: 20px;
   }
 }

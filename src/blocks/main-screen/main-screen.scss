@@ -93,12 +93,13 @@
     background-image: url('../img/table.jpg');
     background-repeat: no-repeat;
     background-position: 0 -9px;
+    background-size: 100% 160%;
   }
 
   &__juice {
     position: absolute;
-    bottom: 57%;
     z-index: 1;
+    bottom: 57%;
     left: 5%;
 
     width: 600px;
