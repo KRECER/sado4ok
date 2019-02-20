@@ -119,3 +119,51 @@
     bottom: 40%;
   }
 }
+
+@media (max-width: $breakpoint-medium) {
+
+  .main-screen__logo {
+    width: 650px;
+  }
+
+  .main-screen__title {
+    width: 400px;
+  }
+
+  .main-screen__btn {
+    margin-top: 0;
+    padding-left: 40px;
+    padding-right: 60px;
+
+    font-size: 26px;
+
+    background-size: 30px;
+    border-width: 6px;
+  }
+
+  .main-screen__juice {
+    bottom: 66%;
+    left: 1%;
+
+    width: 454px;
+  }
+
+  .main-screen__sticker {
+    top: -80%;
+    left: 12%;
+
+    width: 260px;
+  }
+
+  .main-screen__hedgehog {
+    right: 1%;
+    bottom: 50%;
+
+    width: 400px;
+  }
+}
+
+@media (max-height: 960px) {
+
+}
+
