@@ -41,7 +41,6 @@ const prettyHtml = require('gulp-pretty-html');
 const replace = require('gulp-replace');
 const ghpages = require('gh-pages');
 const path = require('path');
-const history = require('connect-history-api-fallback');
 
 // Глобальные настройки этого запуска
 const buildLibrary = process.env.BUILD_LIBRARY == 'yes' ? true : false;
@@ -356,8 +355,7 @@ function serve() {
     port: 8080,
     startPath: 'index.html',
     open: false,
-    notify: false,
-    middleware: [ history( {index: '/index.html'} )]
+    notify: false
   });
 
   // Страницы: изменение, добавление
