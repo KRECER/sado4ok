@@ -63,6 +63,7 @@
 
     color: #db291a;
     font-size: 23px;
+    font-weight: 900;
 
     background-color: #fbdb00;
     border-radius: 30px;
@@ -162,5 +163,91 @@
     color: $green;
 
     background-color: #fbdb00;
+  }
+}
+
+@media (max-height: 960px) {
+
+  .prizes {
+    padding-top: 270px;
+  }
+
+  .prizes__logo {
+    width: 250px;
+  }
+
+  .prizes__item {
+    width: 150px;
+    height: 150px;
+  }
+
+  .prizes__description {
+    width: 290px;
+  }
+
+  .prizes__item--divantv .prizes__description {
+    top: -110px;
+  }
+
+  .prizes__item--phone .prizes__description {
+    top: 110px;
+    left: -20px;
+  }
+
+  .prizes__item--rozetka .prizes__description {
+    top: -90px;
+  }
+
+  .prizes__item--100000 .prizes__description {
+    top: 116px;
+  }
+
+  .prizes__quantity {
+    top: -16%;
+    right: -39%;
+
+    border: 7px solid $white;
+
+    font-size: 18px;
+  }
+
+  .prizes__footer {
+    height: 130px;
+
+    background-size: 100% 300%;
+  }
+
+  .prizes__sticker {
+    top: -160px;
+
+    width: 240px;
+  }
+
+  .prizes__text {
+    left: 23%;
+
+    width: 510px;
+  }
+
+  .prizes__btn {
+    font-size: 26px;
+
+    border-width: 8px;
+    background-size: 30px;
+  }
+}
+
+
+@media (max-width: $breakpoint-large) {
+
+  .prizes__text {
+    left: 30%;
+  }
+}
+
+@media (max-width: 1500px) {
+
+  .prizes__text {
+    left: 60%;
   }
 }
