@@ -24,7 +24,10 @@ let config = {
     "./script.js"
   ],
   "addAssets": {
-    "src/fonts/demo-empty-open-sans.woff2": "fonts/",
+    "src/fonts/ProximaSoft-Black.woff2": "fonts/",
+    "src/fonts/ProximaSoft-Black.woff": "fonts/",
+    "src/fonts/ProximaSoft-Extrabld.woff2": "fonts/",
+    "src/fonts/ProximaSoft-Extrabld.woff": "fonts/",
     "src/img/*.{png,svg,jpg,jpeg}": "img/",
     // "src/favicon/*.{png,ico,svg,xml,webmanifest}": "img/favicon",
   },
