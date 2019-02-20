@@ -83,6 +83,7 @@
     "baron": "^3.0.3",
     "choices.js": "^6.0.0",
     "closest": "0.0.1",
+    "connect-history-api-fallback": "^1.6.0",
     "jquery": "^3.1.1",
     "object-fit-images": "^3.2.3",
     "scrollmagic": "^2.0.6",
