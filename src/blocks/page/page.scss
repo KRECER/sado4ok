@@ -29,23 +29,31 @@ body{
 }
 .prizes{
     position: relative;
-    z-index: 5;
+    // z-index: 6;
     transition: transform 600ms;
     transform: translate3d(0, 0, 0);
 }
 .family{
     position: relative;
-    z-index: 5;
+    // z-index: 6;
     transition: transform 600ms;
     transform: translate3d(0, -100%, 0);
 }
-.prizes.show{
-  transform: translate3d(0, -100%, 0);
+.show {
+  z-index: 10;
 }
-
+.prizes.show{
+  transform: translate3d(0, -101%, 0);
+  // z-index: 8;
+}
+.prizes.show + .family {
+  // z-index: 7;
+}
 .family.show{
   transition: transform 600ms;
-  transform: translate3d(0,-200%,0);
+  transform: translate3d(0,-186%,0);
+  height: 100vh;
+  // z-index: 9;
 }
 
 @media (max-width: 1200px){

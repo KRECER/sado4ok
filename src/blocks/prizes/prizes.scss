@@ -12,6 +12,13 @@
   background-size: cover;
   background-position: 0 -100px;
 
+  &__arrow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   &__logo {
     position: absolute;
     top: -12%;

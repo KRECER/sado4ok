@@ -42,16 +42,19 @@ ready(function(){
         document.getElementById('bottom-block').classList.add('show');
       } else if (document.getElementById('js-scroll-family') && rePrizes.test(window.location.pathname)) {
         window.history.pushState("", "", '/family');
+        document.getElementById('js-scroll-family').style.zIndex = 12;
         document.getElementById('js-scroll-family').classList.add('show');
       }
     } else {
       if (document.getElementById('bottom-block') && reFamily.test(window.location.pathname)) {
         window.history.pushState("", "", '/prizes');
         document.getElementById('js-scroll-family').classList.remove('show');
+        document.getElementById('.prizes').style.zIndex = 11;
       }
       else if (rePrizes.test(window.location.pathname)) {
         window.history.pushState("", "", '/main');
         document.getElementById('bottom-block').classList.remove('show');
+        document.getElementById('bottom-block').style.zIndex = 10;
       }
     }
   }
