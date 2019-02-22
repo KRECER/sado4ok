@@ -163,7 +163,191 @@
   }
 }
 
-@media (max-height: 960px) {
+@media (max-width: $breakpoint-tablet-lg) {
 
+  .main-screen {
+    height: 100%;
+  }
+
+  .main-screen__inner {
+    width: auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-screen__logo {
+    width: 600px;
+  }
+
+  .main-screen__btn {
+    font-size: 16px;
+
+    background-size: 20px;
+  }
+
+  .main-screen__juice {
+    top: -280px;
+    left: 0;
+
+    width: 450px;
+  }
+
+  .main-screen__sticker {
+    top: -90px;
+    left: 150px;
+
+    width: 250px;
+  }
+
+  .main-screen__hedgehog {
+    top: -180px;
+    width: 370px;
+  }
+
+  .main-screen__footer {
+    position: relative;
+
+    margin-top: 300px;
+  }
 }
+
+@media (max-width: $screen-md) {
+
+  .main-screen__inner {
+    width: auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-screen__logo {
+    width: 600px;
+  }
+
+  .main-screen__btn {
+    font-size: 16px;
+
+    background-size: 20px;
+  }
+
+  .main-screen__juice {
+    top: -220px;
+    left: 0;
+
+    width: 370px;
+  }
+
+  .main-screen__sticker {
+    top: -30px;
+    left: 150px;
+
+    width: 170px;
+  }
+
+  .main-screen__hedgehog {
+    top: -150px;
+    width: 270px;
+  }
+
+  .main-screen__footer {
+    position: relative;
+
+    height: 200px;
+    margin-top: 240px;
+  }
+}
+
+@media (max-width: $breakpoint-phone-lg) {
+
+  .main-screen__inner {
+    width: auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-screen__logo {
+    width: 600px;
+  }
+
+  .main-screen__btn {
+    font-size: 16px;
+
+    background-size: 20px;
+  }
+
+  .main-screen__juice {
+    top: -140px;
+    left: 0;
+
+    width: 280px;
+  }
+
+  .main-screen__sticker {
+    top: -20px;
+    left: 100px;
+
+    width: 150px;
+  }
+
+  .main-screen__hedgehog {
+    top: -100px;
+    width: 200px;
+  }
+
+  .main-screen__footer {
+    position: relative;
+
+    height: 150px;
+    margin-top: 170px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+
+  .main-screen__inner {
+    width: auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-screen__logo {
+    width: 600px;
+  }
+
+  .main-screen__btn {
+    font-size: 16px;
+
+    background-size: 20px;
+  }
+
+  .main-screen__juice {
+    top: -120px;
+    left: 0;
+
+    width: 200px;
+  }
+
+  .main-screen__sticker {
+    top: -40px;
+    left: 70px;
+
+    width: 120px;
+  }
+
+  .main-screen__hedgehog {
+    top: -70px;
+    width: 150px;
+  }
+
+  .main-screen__footer {
+    position: relative;
+
+    height: 120px;
+    margin-top: 170px;
+  }
+}
+
 

@@ -165,3 +165,65 @@
     padding-left: 100px;
   }
 }
+
+@media (max-width: $breakpoint-tablet-lg) {
+
+  .family {
+    padding-top: 100px;
+  }
+
+  .family__arrow {
+    display: none;
+  }
+
+  .family__logo {
+    display: none;
+  }
+
+  .family__inner {
+    flex-wrap: wrap;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .family__text {
+    width: auto;
+
+    text-align: left;
+  }
+
+  .family__list {
+    width: auto;
+    padding-left: 0;
+  }
+
+  .family__item {
+    padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .family__footer {
+    position: relative;
+
+    height: 150px;
+    margin-top: 270px;
+  }
+
+  .family__juices {
+    top: -230px;
+    left: 55%;
+
+    width: 400px;
+    min-width: 400px;
+  }
+
+  .family__sticker {
+    top: -100px;
+
+    width: 180px;
+  }
+}

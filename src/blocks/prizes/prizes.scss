@@ -10,7 +10,6 @@
   background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -100px;
 
   &__arrow {
     position: absolute;
@@ -161,6 +160,7 @@
     position: absolute;
     top: 50%;
     right: 140px;
+
     transform: translateY(-50%);
 
     padding-top: 0;
@@ -176,7 +176,7 @@
 @media (max-height: 960px) {
 
   .prizes {
-    padding-top: 270px;
+    padding-top: 100px;
   }
 
   .prizes__logo {
@@ -237,6 +237,9 @@
   }
 
   .prizes__btn {
+    right: auto;
+    left: 20px;
+
     font-size: 26px;
 
     border-width: 8px;
@@ -252,9 +255,268 @@
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: $breakpoint-tablet-lg) {
+
+  .prizes__logo {
+    display: none;
+  }
 
   .prizes__text {
-    // left: 33%;
+    display: none;
+  }
+
+  .prizes__arrow {
+    display: none;
+  }
+
+  .prizes__sticker {
+    display: none;
+  }
+
+  .prizes__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .prizes__item {
+    width: 130px;
+    height: 130px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+
+    &--divantv {
+
+      .prizes__description {
+        top: -85px;
+      }
+    }
+
+    &--phone {
+      margin-right: 0;
+
+      .prizes__description {
+        top: 88px;
+      }
+    }
+
+    &--rozetka {
+
+      .prizes__description {
+        top: -72px;
+      }
+    }
+
+    &--100000 {
+
+      .prizes__description {
+        top: 92px;
+      }
+    }
+  }
+
+  .prizes__description {
+    width: 220px;
+  }
+
+  .prizes__footer {
+    position: relative;
+
+    background: transparent;
+  }
+}
+
+@media (max-width: $screen-md) {
+
+  .prizes__list {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .prizes__item {
+    width: 130px;
+    height: 130px;
+    margin-right: 83px;
+    margin-bottom: 120px;
+
+    &--divantv {
+
+      .prizes__description {
+        top: -78px;
+      }
+    }
+
+    &--phone {
+      margin-right: 0;
+
+      .prizes__description {
+        top: 88px;
+      }
+    }
+
+    &--rozetka {
+
+      .prizes__description {
+        top: -65px;
+      }
+    }
+
+    &--100000 {
+
+      .prizes__description {
+        top: 92px;
+      }
+    }
+  }
+
+  .prizes__description {
+    width: 200px;
+  }
+
+  .prizes__footer {
+    position: relative;
+
+    background: transparent;
+  }
+}
+
+@media (max-width: $breakpoint-phone-lg) {
+
+  .prizes__list {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .prizes__item {
+    width: 100px;
+    height: 100px;
+    margin-right: 83px;
+    margin-bottom: 120px;
+
+    border-width: 6px;
+
+    &--divantv {
+
+      .prizes__description {
+        top: -60px;
+      }
+    }
+
+    &--phone {
+      margin-right: 0;
+
+      .prizes__description {
+        top: 77px;
+        left: -8px;
+      }
+    }
+
+    &--rozetka {
+
+      .prizes__description {
+        top: -55px;
+      }
+    }
+
+    &--100000 {
+
+      .prizes__description {
+        top: 62px;
+        left: -26px;
+      }
+    }
+  }
+
+  .prizes__description {
+    width: 190px;
+  }
+
+  .prizes__quantity {
+    font-size: 12px;
+
+    border-width: 3px;
+  }
+
+  .prizes__footer {
+    position: relative;
+
+    background: transparent;
+  }
+}
+
+@media (max-width: $screen-sm) {
+
+  .prizes__list {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .prizes__item {
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+
+    border-width: 6px;
+
+    &--divantv {
+
+      .prizes__description {
+        top: -60px;
+      }
+    }
+
+    &--phone {
+      margin-right: 0;
+
+      .prizes__description {
+        top: 77px;
+        left: -8px;
+      }
+    }
+
+    &--rozetka {
+
+      .prizes__description {
+        top: -55px;
+      }
+    }
+
+    &--100000 {
+
+      .prizes__description {
+        top: 62px;
+        left: -26px;
+      }
+    }
+  }
+
+  .prizes__description {
+    width: 150px;
+  }
+
+  .prizes__quantity {
+    font-size: 12px;
+
+    border-width: 3px;
+  }
+
+  .prizes__footer {
+    position: relative;
+
+    background: transparent;
+  }
+
+  .prizes__btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 60px;
+
+    font-size: 18px;
+
+    border-width: 6px;
+    background-size: 25px;
   }
 }

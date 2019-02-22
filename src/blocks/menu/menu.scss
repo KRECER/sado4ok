@@ -48,3 +48,23 @@
     fill: #548134;
   }
 }
+
+@media (max-width: $breakpoint-tablet-lg) {
+
+  .menu {
+    top: 10px;
+    right: auto;
+    width: 100%;
+  }
+
+  .menu__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu__item {
+    margin-right: 10px;
+
+    font-size: 14px;
+  }
+}
