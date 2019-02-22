@@ -5,7 +5,7 @@
 .main-screen {
   position: relative;
 
-  background-image: url('../img/bg-main-screen.jpg');
+  background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -117,6 +117,21 @@
     z-index: 1;
     right: 5%;
     bottom: 40%;
+  }
+}
+
+@media (max-width: $screen-xxl) {
+
+  .main-screen__juice {
+    left: 1%;
+  }
+
+  .main-screen__sticker {
+    left: 10%;
+  }
+
+  .main-screen__hedgehog {
+    right: 1%;
   }
 }
 

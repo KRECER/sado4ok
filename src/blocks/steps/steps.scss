@@ -16,8 +16,7 @@
   height: 166px;
   padding-top: 40px;
 
-  // background-image: url('../img/bg-steps.png');
-  background-color: #6f3516;
+  background-image: url('../img/bg-steps.png');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -74,12 +73,32 @@
   }
 }
 
+@media (max-width: $breakpoint-medium) {
+
+  .steps__number {
+    width: 70px;
+    height: 70px;
+
+    font-size: 26px;
+  }
+
+  .steps__description {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: $breakpoint-tablet-lg) {
 
   .steps {
     position: relative;
 
     height: auto;
+    margin-top: -30px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-image: url('../img/bg-steps-mob.png');
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
   }
 
   .steps__list {
