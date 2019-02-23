@@ -31,6 +31,7 @@
   -webkit-text-size-adjust: 100%;
   min-width: 320px;
   min-height: 100%;
+  overflow: hidden;
 
   &__inner {
     min-height: 100vh;
@@ -45,6 +46,12 @@
 
   &__footer-wrapper {
     flex-shrink: 0;
+  }
+}
+
+@media (max-width: $breakpoint-tablet-lg) {
+  .page {
+    overflow: auto;
   }
 }
 
@@ -70,7 +77,6 @@ body {
   text-align: left;
   color: $text-color;
   background-color: $body-bg;
-  overflow: hidden;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
