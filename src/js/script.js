@@ -6,3 +6,7 @@
 
 // const $ = require('jquery');
 // $( document ).ready(function() {});
+require('./Animator');
+import Paginator from './Paginator';
+
+new Paginator();

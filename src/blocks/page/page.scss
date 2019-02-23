@@ -24,48 +24,6 @@
 // }
 /* stylelint-enable */
 
-body{
-  overflow: hidden;
-}
-.prizes{
-    position: relative;
-    // z-index: 6;
-    transition: transform 600ms;
-    transform: translate3d(0, 0, 0);
-}
-.family{
-    position: relative;
-    // z-index: 6;
-    transition: transform 600ms;
-    transform: translate3d(0, -100%, 0);
-}
-.show {
-  z-index: 10;
-}
-.prizes.show{
-  transform: translate3d(0, -101%, 0);
-  // z-index: 8;
-}
-.prizes.show + .family {
-  // z-index: 7;
-}
-.family.show{
-  transition: transform 600ms;
-  transform: translate3d(0,-186%,0);
-  height: 100vh;
-  // z-index: 9;
-}
-
-@media (max-width: 900px){
-    body{
-        overflow: auto;
-    }
-    .show,.family,.prizes,.family.show,.prizes.show{
-        transform: none;
-    }
-}
-
-
 
 .page {
   box-sizing: border-box;
@@ -112,6 +70,7 @@ body {
   text-align: left;
   color: $text-color;
   background-color: $body-bg;
+  overflow: hidden;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
