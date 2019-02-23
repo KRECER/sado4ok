@@ -4,6 +4,7 @@
 
 .prizes {
   position: relative;
+  z-index: 10;
 
   padding-top: 360px;
 
@@ -15,6 +16,8 @@
     position: absolute;
     top: 0;
     left: 50%;
+
+    width: 36px;
     transform: translateX(-50%);
   }
 

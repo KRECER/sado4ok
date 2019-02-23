@@ -14,7 +14,7 @@ PubSub.subscribe('gotoSlide', function(msg, data) {
       newSlide.classList.add('screen--show');
       tl.fromTo(newSlide, 0.5, {css: {top: '60%'}}, {css: {top: '0%'}}, 0);
     } else {
-      newSlide.classList.add('screen--show');
+      currentSlide.classList.remove('screen--show');
       tl.fromTo(currentSlide, 0.5, {css: {top: '0%'}}, {css: {top: '97%'}}, 0);
     }
   }

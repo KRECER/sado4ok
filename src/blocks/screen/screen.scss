@@ -4,7 +4,6 @@
 
 .screen {
   position: absolute;
-  z-index: 10;
   top: 97%;
   left: 0;
 
@@ -17,8 +16,10 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 
   &--show {
-    z-index: 10;
+    z-index: 9;
     top: 0;
+
+    border-radius: 0;
   }
 }
 
