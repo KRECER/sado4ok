@@ -47,6 +47,16 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
+
+  &::-webkit-scrollbar {
+    background-color: #fdcb33;;
+    width: 11px
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #e1e8d7;
+    border-radius: 55px;
+  }
 }
 
 @media (max-width: $breakpoint-tablet-lg) {

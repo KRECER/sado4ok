@@ -2,6 +2,8 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
+
+
 .prizes {
   position: relative;
   z-index: 10;
@@ -161,10 +163,8 @@
 
   &__btn {
     position: absolute;
-    top: 50%;
+    top: 20%;
     right: 140px;
-
-    transform: translateY(-50%);
 
     padding-top: 0;
     padding-bottom: 0;
@@ -238,6 +238,16 @@
 
     width: 510px;
   }
+
+  .prizes__btn {
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    font-size: 18px;
+
+    background-size: 30px;
+    border-width: 8px;
+  }
 }
 
 
@@ -287,7 +297,7 @@
   .prizes__item {
     width: 130px;
     height: 130px;
-    margin-right: 60px;
+    margin-right: 100px;
     margin-bottom: 100px;
 
     &--divantv {
@@ -355,6 +365,7 @@
   .prizes__item {
     width: 170px;
     height: 170px;
+    margin-right: 35px;
 
     &--divantv {
 
@@ -389,14 +400,24 @@
     width: 300px;
   }
 
+  .prizes__quantity {
+    font-size: 14px;
+
+    border-width: 7px;
+  }
+
   .prizes__text {
+    top: -100px;
     left: 40%;
+
+    width: 600px;
   }
 
   .prizes__sticker {
     top: -180px;
+    left: 100px;
 
-    width: 320px;
+    width: 270px;
   }
 }
 
