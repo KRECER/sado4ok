@@ -1,12 +1,11 @@
-// const ready = require('./utils/documentReady.js');
-
-// ready(function(){
-//   console.log('DOM героически построен!');
-// });
-
-// const $ = require('jquery');
-// $( document ).ready(function() {});
+/* global window */
 require('./Animator');
 import Paginator from './Paginator';
+// import _ from 'lodash';
 
-new Paginator();
+const ready = require('./utils/documentReady.js');
+
+ready(function(){
+  new Paginator();
+  window.console.log('DOM героически построен!');
+});
